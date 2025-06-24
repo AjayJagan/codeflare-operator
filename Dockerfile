@@ -8,7 +8,7 @@ FROM registry.access.redhat.com/ubi8/ubi@sha256:fd3bf22d0593e2ed26a1c74ce161c522
 ARG GOLANG_VERSION=1.23.0
 
 ARG TARGETOS TARGETARCH
-RUN echo "GOOS=${TARGETOS} GOARCH=${TARGETARCH}"
+# RUN echo "GOOS=${TARGETOS} GOARCH=${TARGETARCH}"
 
 # Install system dependencies
 RUN dnf upgrade -y && dnf install -y \
