@@ -7,6 +7,9 @@ FROM ${GOLANG_IMAGE} AS golang
 FROM registry.access.redhat.com/ubi8/ubi@sha256:fd3bf22d0593e2ed26a1c74ce161c52295711a67de677b5938c87704237e49b0 AS builder
 ARG GOLANG_VERSION=1.23.0
 
+ARG TARGETOS TARGETARCH
+RUN echo "GOOS=${TARGETOS} GOARCH=${TARGETARCH}"
+
 # Install system dependencies
 RUN dnf upgrade -y && dnf install -y \
     gcc \
@@ -34,7 +37,7 @@ COPY pkg/ pkg/
 
 # Build
 USER root
-RUN CGO_ENABLED=1 GOOS=linux GOARCH=${GOARCH} make go-build-for-image
+RUN CGO_ENABLED=1 GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH} make go-build-for-image
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8
 WORKDIR /
