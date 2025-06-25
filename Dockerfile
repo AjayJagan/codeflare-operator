@@ -4,7 +4,7 @@
 ARG GOLANG_IMAGE=docker.io/library/golang:1.23
 FROM ${GOLANG_IMAGE} AS golang
 
-FROM registry.access.redhat.com/ubi8/ubi@sha256:fd3bf22d0593e2ed26a1c74ce161c52295711a67de677b5938c87704237e49b0 AS builder
+FROM registry.access.redhat.com/ubi8/ubi@sha256:19eae3d00adb37538a62b9bd093fd1e01dc6197f1925e960224244a1ed52bfb5 AS builder
 ARG GOLANG_VERSION=1.23.0
 
 ARG TARGETOS TARGETARCH
