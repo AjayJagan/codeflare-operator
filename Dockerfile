@@ -1,8 +1,17 @@
 # Build the manager binary
 FROM registry.access.redhat.com/ubi9/go-toolset:1.23 AS builder
 
-ARG TARGETOS
-ARG TARGETARCH
+ARG TARGETOS TARGETARCH
+
+USER root
+
+# Install system dependencies
+RUN dnf upgrade -y && dnf install -y \
+    gcc \
+    make \
+    openssl-devel \
+    git \
+    && dnf clean all && rm -rf /var/cache/yum
 
 WORKDIR /workspace
 # Copy the Go Modules manifests
