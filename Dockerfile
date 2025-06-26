@@ -1,14 +1,7 @@
 # Build the manager binary
-
-# BEGIN -- workaround lack of go-toolset for golang 1.23
-ARG GOLANG_IMAGE=docker.io/library/golang:1.23
-FROM ${GOLANG_IMAGE} AS golang
-
-FROM registry.access.redhat.com/ubi8/ubi@sha256:fd3bf22d0593e2ed26a1c74ce161c52295711a67de677b5938c87704237e49b0 AS builder
-ARG GOLANG_VERSION=1.23.0
+FROM registry.access.redhat.com/ubi9/go-toolset:1.23 AS builder
 
 ARG TARGETOS TARGETARCH
-# RUN echo "GOOS=${TARGETOS} GOARCH=${TARGETARCH}"
 
 # Install system dependencies
 RUN dnf upgrade -y && dnf install -y \
@@ -37,7 +30,7 @@ COPY pkg/ pkg/
 
 # Build
 USER root
-RUN CGO_ENABLED=1 GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH} make go-build-for-image
+RUN CGO_ENABLED=1 GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH:-amd64} make go-build-for-image
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8
 WORKDIR /
