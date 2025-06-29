@@ -41,7 +41,7 @@ replace sigs.k8s.io/custom-metrics-apiserver => sigs.k8s.io/custom-metrics-apise
 
 replace go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.44.0
 
-replace github.com/jackc/pgx/v4 => github.com/jackc/pgx/v5 v5.5.4
+replace github.com/jackc/pgx/v4 => github.com/jackc/pgx/v5 v5.7.5
 
 // Workaround deprecation of cluster.Status.State in ray-operator v1.3.2
 replace github.com/ray-project/kuberay/ray-operator v1.3.2 => github.com/ray-project/kuberay/ray-operator v1.2.1
@@ -73,7 +73,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/imdario/mergo v0.3.16 // indirect
-	github.com/jackc/pgx/v5 v5.5.5 // indirect
+	github.com/jackc/pgx/v5 v5.7.5 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
