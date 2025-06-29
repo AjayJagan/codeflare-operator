@@ -37,7 +37,7 @@ replace k8s.io/apimachinery v0.32.3 => k8s.io/apimachinery v0.31.4
 
 replace sigs.k8s.io/controller-runtime v0.20.3 => sigs.k8s.io/controller-runtime v0.19.3
 
-replace sigs.k8s.io/custom-metrics-apiserver => sigs.k8s.io/custom-metrics-apiserver v1.25.1-0.20230306170449-63d8c93851f3
+replace sigs.k8s.io/custom-metrics-apiserver => sigs.k8s.io/custom-metrics-apiserver v1.33.0
 
 replace go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.44.0
 
