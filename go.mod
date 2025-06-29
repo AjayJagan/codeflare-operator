@@ -39,7 +39,7 @@ replace sigs.k8s.io/controller-runtime v0.20.3 => sigs.k8s.io/controller-runtime
 
 replace sigs.k8s.io/custom-metrics-apiserver => sigs.k8s.io/custom-metrics-apiserver v1.25.1-0.20230306170449-63d8c93851f3
 
-replace go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.44.0
+replace go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.62.0
 
 replace github.com/jackc/pgx/v4 => github.com/jackc/pgx/v5 v5.5.4
 
