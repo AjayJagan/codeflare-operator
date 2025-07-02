@@ -3,16 +3,6 @@ FROM registry.access.redhat.com/ubi8/go-toolset:1.23 AS builder
 
 ARG TARGETOS TARGETARCH
 
-USER root
-
-# Install system dependencies
-RUN dnf upgrade -y && dnf install -y \
-    gcc \
-    make \
-    openssl-devel \
-    git \
-    && dnf clean all && rm -rf /var/cache/yum
-
 WORKDIR /workspace
 # Copy the Go Modules manifests
 COPY go.mod go.mod
@@ -24,8 +14,7 @@ RUN go mod download
 COPY main.go main.go
 COPY pkg/ pkg/
 
-# Build
-RUN CGO_ENABLED=1 GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH:-amd64} make go-build-for-image
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=${TARGETARCH:-amd64} make go-build-for-image
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8
 WORKDIR /
