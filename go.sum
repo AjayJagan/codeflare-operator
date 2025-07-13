@@ -671,8 +671,8 @@ k8s.io/utils v0.0.0-20241210054802-24370beab758 h1:sdbE21q2nlQtFh65saZY+rRM6x6aJ
 k8s.io/utils v0.0.0-20241210054802-24370beab758/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 sigs.k8s.io/controller-runtime v0.19.3 h1:XO2GvC9OPftRst6xWCpTgBZO04S2cbp0Qqkj8bX1sPw=
 sigs.k8s.io/controller-runtime v0.19.3/go.mod h1:j4j87DqtsThvwTv5/Tc5NFRyyF/RF0ip4+62tbTSIUM=
-sigs.k8s.io/jobset v0.8.0 h1:80cJcPld+IMdKFOqzEW4et3Y6lGAPcP8YmBZ+aiKGYA=
-sigs.k8s.io/jobset v0.8.0/go.mod h1:yitjuGOExl2p964nhyevQGIkfiPSRHcdC3zNBneKCT8=
+sigs.k8s.io/jobset v0.8.2 h1:WC5a5G7MqfJJy4p+6OxGMpfbB90KoDSay96Mc4yMMZM=
+sigs.k8s.io/jobset v0.8.2/go.mod h1:yitjuGOExl2p964nhyevQGIkfiPSRHcdC3zNBneKCT8=
 sigs.k8s.io/json v0.0.0-20211020170558-c049b76a60c6/go.mod h1:p4QtZmO4uMYipTQNzagwnNoseA6OxSUutVw05NhYDRs=
 sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd/go.mod h1:B8JuhiUyNFVKdsE8h686QcCxMaH6HrOAZj4vswFpcB0=
 sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8 h1:gBQPwqORJ8d8/YNZWEjoZs7npUVDpVXUUOFfW6CgAqE=
