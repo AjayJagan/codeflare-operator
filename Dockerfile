@@ -16,7 +16,7 @@ COPY pkg/ pkg/
 
 RUN CGO_ENABLED=1 GOOS=linux GOARCH=${TARGETARCH:-amd64} make go-build-for-image
 
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.10-1752564239
 WORKDIR /
 COPY --from=builder /workspace/manager .
 
