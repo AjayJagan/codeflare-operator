@@ -91,8 +91,8 @@ github.com/gobwas/pool v0.2.1/go.mod h1:q8bcK0KcYlCgd9e7WYLm9LpyS+YeLd8JVDW6Wezm
 github.com/gobwas/ws v1.2.1/go.mod h1:hRKAFb8wOxFROYNsT1bqfWnhX+b5MFeJM9r2ZSwg/KY=
 github.com/gogo/protobuf v1.3.2 h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q=
 github.com/gogo/protobuf v1.3.2/go.mod h1:P1XiOD3dCwIKUDQYPy72D8LYyHL2YPYrpS2s69NZV8Q=
-github.com/golang-jwt/jwt/v4 v4.5.0 h1:7cYmW1XlMY7h7ii7UhUyChSgS5wUJEnm9uZVTGqOWzg=
-github.com/golang-jwt/jwt/v4 v4.5.0/go.mod h1:m21LjoU+eqJr34lmDMbreY2eSTRJ1cv77w39/MY0Ch0=
+github.com/golang-jwt/jwt/v4 v4.5.2 h1:YtQM7lnr8iZ+j5q71MGKkNw9Mn7AjHM68uc9g5fXeUI=
+github.com/golang-jwt/jwt/v4 v4.5.2/go.mod h1:m21LjoU+eqJr34lmDMbreY2eSTRJ1cv77w39/MY0Ch0=
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/golang/glog v1.2.4 h1:CNNw5U8lSiiBk7druxtSHHTsRWcxKoac6kZKm2peBBc=
 github.com/golang/glog v1.2.4/go.mod h1:6AhwSGph0fcJtXVM/PEHPqZlFeoLxhs7/t5UDAwmO+w=
@@ -272,8 +272,12 @@ github.com/opencontainers/go-digest v1.0.0 h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8
 github.com/opencontainers/go-digest v1.0.0/go.mod h1:0JzlMkj0TRzQZfJkVvzbP0HBR3IKzErnv2BNG4W4MAM=
 github.com/opendatahub-io/opendatahub-operator/v2 v2.10.0 h1:tOX6R3N41pdyC+E1TeLErVY7KJV0zg9GAd/Z7xLT7no=
 github.com/opendatahub-io/opendatahub-operator/v2 v2.10.0/go.mod h1:Hgy6bUPl29drwjs9F/5PZHUopOOojQpAPv1mWh3jnJQ=
-github.com/openshift-online/ocm-sdk-go v0.1.411 h1:DlNHC3yqmk77Wzc+YJBsd0ccHXn7JFwGC1C1NOp/faw=
-github.com/openshift-online/ocm-sdk-go v0.1.411/go.mod h1:CiAu2jwl3ITKOxkeV0Qnhzv4gs35AmpIzVABQLtcI2Y=
+github.com/openshift-online/ocm-api-model/clientapi v0.0.422 h1:h1zt1HNq36lGP0M3H6n054rrAmssIwNz6C+OerN3Vco=
+github.com/openshift-online/ocm-api-model/clientapi v0.0.422/go.mod h1:fZwy5HY2URG9nrExvQeXrDU/08TGqZ16f8oymVEN5lo=
+github.com/openshift-online/ocm-api-model/model v0.0.422 h1:RI826S++RQIwx8oT2DT9accDxlmzRCVxJWFVkU4UJh0=
+github.com/openshift-online/ocm-api-model/model v0.0.422/go.mod h1:B/fZxd88BTKig/rCCc189cENnFlEzxQslHHzoSgvo1I=
+github.com/openshift-online/ocm-sdk-go v0.1.471 h1:xnZJDXULhKknCT+zU3IvXpEDJYlLlP0hP8NkbVHo/ng=
+github.com/openshift-online/ocm-sdk-go v0.1.471/go.mod h1:JuDmf4h0bHdKX3ZM/SlAC02dCIcI4RlYqzwwUxUWz7w=
 github.com/openshift/api v0.0.0-20240904015708-69df64132c91 h1:PfPpMwHR8iAxQuLpQt+x9f3PAIeSPG2BLQd69p+NQHw=
 github.com/openshift/api v0.0.0-20240904015708-69df64132c91/go.mod h1:OOh6Qopf21pSzqNVCB5gomomBXb8o5sGKZxG2KNpaXM=
 github.com/openshift/client-go v0.0.0-20240904130219-3795e907a202 h1:mLJlN8PdZgI5oxwXctB0/IF/2c7F29R5ru1dCLVzEyk=
