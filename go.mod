@@ -13,7 +13,7 @@ require (
 	github.com/project-codeflare/appwrapper v1.1.2
 	github.com/project-codeflare/codeflare-common v0.0.0-20250321141415-67bb8bd932df
 	github.com/ray-project/kuberay/ray-operator v1.3.2
-	go.uber.org/zap v1.27.0
+	go.uber.org/zap v1.28.0
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394
 	k8s.io/api v0.32.3
 	k8s.io/apiextensions-apiserver v0.32.3
