@@ -1,6 +1,6 @@
 module github.com/project-codeflare/codeflare-operator
 
-go 1.23.0
+go 1.26.0
 
 require (
 	github.com/go-logr/logr v1.4.2
@@ -57,8 +57,8 @@ require (
 	github.com/evanphx/json-patch/v5 v5.9.11 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/go-logr/zapr v1.3.0 // indirect
-	github.com/go-openapi/jsonpointer v0.21.1 // indirect
-	github.com/go-openapi/jsonreference v0.21.0 // indirect
+	github.com/go-openapi/jsonpointer v1.0.1 // indirect
+	github.com/go-openapi/jsonreference v1.0.2 // indirect
 	github.com/go-openapi/swag v0.23.1 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
