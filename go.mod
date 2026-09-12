@@ -15,11 +15,11 @@ require (
 	github.com/ray-project/kuberay/ray-operator v1.3.2
 	go.uber.org/zap v1.27.0
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394
-	k8s.io/api v0.32.3
-	k8s.io/apiextensions-apiserver v0.32.3
-	k8s.io/apimachinery v0.32.3
+	k8s.io/api v0.37.0
+	k8s.io/apiextensions-apiserver v0.37.0
+	k8s.io/apimachinery v0.37.0
 	k8s.io/client-go v11.0.0+incompatible
-	k8s.io/component-base v0.32.3
+	k8s.io/component-base v0.37.0
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
 	sigs.k8s.io/controller-runtime v0.20.3
@@ -29,9 +29,9 @@ require (
 
 replace k8s.io/client-go => k8s.io/client-go v0.31.4
 
-replace k8s.io/api => k8s.io/api v0.31.4
+replace k8s.io/api => k8s.io/api v0.37.0
 
-replace k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.31.2
+replace k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.37.0
 
 replace k8s.io/apimachinery v0.32.3 => k8s.io/apimachinery v0.31.4
 
